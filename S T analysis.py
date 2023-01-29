@@ -3,7 +3,7 @@ from Bio import SeqIO
 
 # read protein sequence
 #seq = [str(record.seq) for record in SeqIO.parse("sequence.fasta", "fasta")][0]
-sequence = input("P61764.fasta", "fasta")
+sequence = input("Enter the protein sequence filename: ")
 seq = [str(record.seq) for record in SeqIO.parse(sequence, "fasta")][0]
 # length of protein sequence
 N = len(seq)
